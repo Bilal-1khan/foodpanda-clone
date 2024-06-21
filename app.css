@@ -1,0 +1,256 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: system-ui;
+}
+:root{
+    --themeColor:#e21b70;
+    --HeroSectionTheme:#f7f7f7;
+}
+/* header styling */
+.mainHeader{
+    background-color: #fff;
+    box-shadow: 0px 4px 11px 3px rgba(0,0,0,0.1);
+    padding: 1.2rem 1.5rem;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+    width: 100%;
+}
+.maxWidth-Container,
+.heroSection-MaxWidth,
+.topChefHeading,
+.chefDetail-Box,
+.maincities-maxwidth,
+.foodpandaApp-MaxWidth{
+    width: 100%;
+    max-width: 1240px;
+    margin: 0px auto;
+}
+.mainNav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    flex: 2;
+    cursor: pointer;
+}
+.logo-icon,.logo-icon img{
+    width: 31px;
+    height: 31px;
+    border-radius: 5px;
+}
+.logo-text{
+    color: var(--themeColor);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.rightSide-Menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex: 1;
+}
+.userMenu,.language{
+    display: flex;
+    gap: 7px;
+    cursor: pointer;
+}
+.userIcon i,.globe i{
+    font-size: 1.1rem;
+}
+.dropDown,.cartLogo i{
+    cursor: pointer;
+    color: var(--themeColor);
+}
+/* ================= */
+
+/* hero section */
+.mainHero-Section{
+    background-color: var(--HeroSectionTheme);
+    padding: 10rem 2.2rem 0px 2.2rem;
+    width: 100%;
+    position: relative;
+}
+.heroSection-MaxWidth{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.leftSection {
+    flex: 1;
+}
+.leftContent h1{
+    color: #444;
+    margin-bottom: 1.5rem;
+    font-weight: bolder;
+    font-size: 2.2rem;
+}
+.streetLocation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 1rem .8rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+    box-shadow:0px 0px 11px 3px rgba(0,0,0,0.1) ;
+}
+.rightInput{
+    border: 1px solid lightgrey;
+    padding: .8rem;
+    width: 80%;
+    border-radius: 5px;
+}
+.rightInput input{
+    outline: none;
+    border: none;
+    width: 80%;
+}
+.locate-me{
+    font-size: 14px;
+    color: var(--themeColor);
+}
+.locate-me i{
+    font-weight: bolder;
+    margin-right: .4rem;
+    font-size: 15px;
+}
+.strt-btn{
+    background-color: var(--themeColor);
+    color: #fff;
+    padding: .8rem 1.2rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.rt-sectionImg{
+    width: 500px;
+}
+.rt-sectionImg img{
+    width: 100%;
+}
+/* =============== */
+
+/* Chef section styling */
+.mainChef-Section{
+    padding: 4.1rem 0px;
+}
+.topChefHeading h2,.top h2{
+    color: #444;
+    font-weight: 600;
+    font-size: 1.8rem;
+    padding: 1.2rem 2rem;
+}
+.chefImage img{
+    width: 100%;
+}
+.chefDetail-Box{
+    position: relative;
+    padding: 0px 2rem;
+}
+.chefDetails{
+    width: 570px;
+    padding: 1.3rem 1rem;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0px 0px 11px 3px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: -10rem;
+}
+.chefList p{
+    font-weight:500;
+    font-size: 1.3rem;
+    color: #444;
+}
+.ulBox,.ulBox li{
+    margin: 1.2rem 0px;
+}
+.chef-btn{
+    background-color: var(--themeColor);
+    padding: .6rem 1rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+}
+/* ================= */
+
+/* cities styling */
+.mainCities-Section{
+    padding: 10rem 2rem;
+}
+.innerMain-Cities h2{
+    color: #444;
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+.citiesCard-Box{
+    display: flex;
+    justify-content: space-around;
+    gap: .8rem;
+    align-items: center;
+    margin-top: 1.8rem;
+}
+.citiesCard{
+    width: 300px;
+    position: relative;
+    border-radius: 5px;
+}
+.citiesCard img{
+    width: 100%;
+    border-radius: 5px;
+}
+.cityName{
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    padding: .5rem 1rem;
+    background-color: #fff;
+    border-radius: 5px;
+}
+/* foddpanda apps */
+.foodpandaApp{
+    padding: 10rem 2rem;
+}
+.top h2{
+    color: #444;
+    font-weight: 600;
+    font-size: 1.8rem;
+    padding: 1.2rem 0px;
+}
+.FPA-Btm{
+    background-color: var(--themeColor);
+    color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+.qrScan{
+    display: flex;
+    /* align-items:center ; */
+    width: 500px;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.qrcode{
+    width: 200px;
+    padding: .4rem;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+.qrcode img{
+    width: 100%;
+}
+.qrPara{
+    line-height: 1.8rem;
+}
