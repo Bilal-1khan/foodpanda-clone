@@ -7,7 +7,7 @@
     font-family: system-ui;
 }
 :root{
-    --themeColor:#e21b70;
+        --themeColor:#e21b70;
     --HeroSectionTheme:#f7f7f7;
 }
 /* header styling */
@@ -26,7 +26,10 @@
 .topChefHeading,
 .chefDetail-Box,
 .maincities-maxwidth,
-.foodpandaApp-MaxWidth{
+.foodpandaApp-MaxWidth,
+.topTL,
+.mainQAS-MaxWidth,
+.footerMaxWidth{
     width: 100%;
     max-width: 1240px;
     margin: 0px auto;
@@ -136,7 +139,11 @@
 .rt-sectionImg{
     width: 500px;
 }
-.rt-sectionImg img{
+.rt-sectionImg img,
+.chefImage img,
+.qrcode img,
+.mobileImg img,
+.lunchImg img{
     width: 100%;
 }
 /* =============== */
@@ -150,9 +157,6 @@
     font-weight: 600;
     font-size: 1.8rem;
     padding: 1.2rem 2rem;
-}
-.chefImage img{
-    width: 100%;
 }
 .chefDetail-Box{
     position: relative;
@@ -221,9 +225,9 @@
 }
 /* foddpanda apps */
 .foodpandaApp{
-    padding: 10rem 2rem;
+    padding: 2rem;
 }
-.top h2{
+.top h2,.topTL h2{
     color: #444;
     font-weight: 600;
     font-size: 1.8rem;
@@ -232,12 +236,17 @@
 .FPA-Btm{
     background-color: var(--themeColor);
     color: #fff;
-    padding: 1.5rem;
+    padding: 3.5rem 1.5rem;
     border-radius: 8px;
+    display: flex;
+    margin-top: 1rem;
+    justify-content: space-between;
+}
+.innerFPA-Left h2{
+    font-weight: 500;
 }
 .qrScan{
     display: flex;
-    /* align-items:center ; */
     width: 500px;
     gap: 1rem;
     margin-top: 1rem;
@@ -248,9 +257,153 @@
     border: 1px solid #fff;
     border-radius: 5px;
 }
-.qrcode img{
-    width: 100%;
-}
 .qrPara{
     line-height: 1.8rem;
+}
+.innerRight-FPA{
+    position: relative;
+}
+.mobileImg{
+    width: 500px;
+    position: absolute;
+    right: 0rem;
+    top: -7rem;
+}
+/* take lunch */
+.mainTakeLunch{
+    padding: 2rem 0px;
+}
+.topTL{
+    padding: 2rem;
+}
+/* faq styling section */
+.mainQsAns-Section{
+    padding: 10rem 2rem;
+}
+.orderFood h2,.whatsnew h2{
+    color: #444;
+    font-weight: 600;
+    font-size: 2rem;
+}
+.orderFood p{
+    margin: 1rem 0px;
+    color: #444444a3;
+}
+.whatsnew{
+    border-bottom:1px solid #44444462;
+    padding: 1rem 0px;
+}
+.faqUlBox{
+    margin: 1.2rem 0px;
+}
+.faqUlBox li{
+    color: #444444a3;
+}
+.faqUlBox li i{
+    margin-right:.5rem ;
+    color: var(--themeColor);
+}
+.btmFaq{
+    margin-top: 1rem;
+}
+.btmTopFaq h2{
+    font-weight: bold;
+    color: #444;
+    font-size: 1.3rem;
+}
+.queryDiv h2{
+    color: #444;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: .6rem 0px;
+}
+.queryPara{
+    color: #444444a3;
+    margin: 1.2rem 0px;
+}
+/* footer styling section */
+.mainFooter{
+    padding: 2rem 2rem;
+}
+.ftrTopUlBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1.3rem 0px;
+    border-top: 1px solid #44444459;
+    border-bottom: 1px solid #44444459;
+}
+.ftrTopUlBox li{
+    color: #444444a3;
+    font-size: 14px;
+}
+.ftrTopUlBox li a{
+    padding: .5rem .35rem;
+    color: #444444a3;
+}
+.ftrTopUlBox li a:hover{
+    color: var(--themeColor);
+}
+.footerMidSection{
+    display: flex;
+    margin: 1.5rem 0px;
+    justify-content: space-between;
+    padding: 1rem 0px;
+    border-bottom: 1px solid #44444459;
+}
+.leftCopyUlBox{
+    flex: 1;
+}
+.leftCopyUlBox li{
+    color: #444444c1;
+    font-size: 13px;
+    font-weight: 500;
+}
+.footerUlBox{
+    display: flex;
+    flex-direction:column ;
+}
+.footerUlBox li{
+    margin: 1rem 0px;
+}
+.footerUlBox a{
+    color: #ff2b85;
+    font-weight: 500;
+}
+.footerUlBox a:hover{
+    color: #e21b70;
+}
+.footerLogo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footerBtmLogo{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-right:.5rem ;
+    border-right: 1px solid #44444459;
+}
+.leftFooterBtmLogo{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.logo-icon-deliveryHero{
+    display: inline-block;
+    width: 81px;
+}
+.deliveryHero img{
+    width: 100%;
+}
+.socialLink a{
+    padding:.5rem .7rem;
+    border-radius: 50%;
+    border:1px solid #44444459;
+
+}
+.socialLink a{
+    color: var(--themeColor);
+    font-size:17px;
 }
